@@ -25,19 +25,3 @@ for item in List:
 
 print sortedList
  
-#print CountLine
-#print SetList
-'''
-line = file.read().split('\n')
-Line0 = line[0].split()
-for item in Line0:
-	List.append(item)
-
-print List
-'''
-'''
-List = line[0].split() + line[1].split() + line[2].split()
-List1 = List.append('who')
-SortedList = List.sort()
-print
-''' 
