@@ -17,6 +17,8 @@ path = 'D:mbox-short.txt'
 file = open(path)
 #lines = file.readline()
 #print lines
+# Choose the right lines and split the words,
+# then add them into a list
 timeList = list()
 hourDict = dict()
 for line in file:
@@ -30,15 +32,15 @@ for line in file:
 			continue
 		#print Line
 #print timeList
-
+# Initalize a dictionary and make a counter 
+# count the requency of the words
 for hour in timeList:
 	hourDict[hour] = hourDict.get(hour,0) + 1
 #print hourDict
-
+# Sort the turples and print them
 sortedList = list()
 for (key,val) in hourDict.items():
 	sortedList.append((key,val))
-
 sortedList.sort()
 #print sortedList
 for k,v in sortedList:
